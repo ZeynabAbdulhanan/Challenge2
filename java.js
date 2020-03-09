@@ -15,6 +15,7 @@ function myClock() {
         h = 24; 
     }   
 //vraag aan docent, hoe moet ik minuten fixen?
+//vraag aan docent, 0 toevoegen voor het nummer, dus 09 en niet 9    
     
     var clock = document.getElementById("clock").innerHTML =   h + ":" + m + ":" + s;//id van div
 }
