@@ -1,3 +1,5 @@
+setInterval(myClock, 1000); //refresh every one second
+
 function myClock() {
     var currentDate = new Date();
     
@@ -6,21 +8,20 @@ function myClock() {
     var s = currentDate.getSeconds(); //seconds
     
     if(h < 24){
-        h = h - 4; 
+        h = h - 5; 
     }
     
     if(h == 0){
         h = 24; 
     }   
     
-    if(m < 59){
-        m = m - 37;
+    if(m < 60){
+        m = m + 23;
     }
     
     if(m == 0){
-        m == 59;
+        m == 60;
     }
     
     var clock = document.getElementById("clock").innerHTML =   h + ":" + m + ":" + s;//id van div
-    var t = setTimeout(myClock, 500);//refresch every half second 
 }
