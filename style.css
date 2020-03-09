@@ -32,35 +32,30 @@ h1{
     border: 1px solid #03dff3;
 }
 
-@media screen only and (min-width: 600px){
-    body{
-        background-color: aqua;
-    }
+@media only screen and (min-width: 600px){
 }
 
-@media screen only and (min-width: 1100px){
+@media only screen and (min-width: 1100px){
     
 }
 
-@media screen only and (min-width: 1300px){
-    
-}
-/*    #clock{
-    color: white;
-    background-image: linear-gradient(to right, #03a9f4, #ff05d5);
-    padding-right: 120px;
-    padding-left: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 200px;
-    height: 90px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    text-anchor: center;
-    font-size: 90px;
-    font-weight: 60px;
-    position: relative;
-    border: 1px solid #03dff3;
+@media only screen and (min-width: 1300px){    
+    #clock{  
+      color: white;
+      background-image: linear-gradient(to right, #03a9f4, #ff05d5);
+      padding-right: 120px;
+      padding-left: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: 500px;
+      height: auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      text-align: center;
+      font-size: 90px;
+      font-weight: 60px;
+      position: relative;
+      border: 1px solid #03dff3;
 }
 
 #clock:before{
@@ -96,4 +91,5 @@ h1{
     background-color: black; /*body achtergrond*/
     z-index: -1;
 }
-}*/
+    
+}
