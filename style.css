@@ -17,7 +17,6 @@ h2{
 }
 
 #clock{
-
     background-image: linear-gradient(to right, #03a9f4, #ff05d5);
     padding-right: 100px;
     padding-left: 40px;
@@ -45,8 +44,7 @@ h2{
     
 }
 
-@media only screen and (min-width: 1300px){ 
-    
+@media only screen and (min-width: 1300px){  
     #clock{      
       color: white;
       background-image: linear-gradient(to right, #03a9f4, #ff05d5);
