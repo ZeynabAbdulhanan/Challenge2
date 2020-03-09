@@ -1,22 +1,32 @@
 body{
-    background: #fff;
+    background: black;
     margin: 10px; 
     padding: 10px;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
+h1{
+    color: white;
+    font-size: 30px;
+    align-content: center;
+    
+}
 #clock{
     color: white;
     background-image: linear-gradient(to right, #03a9f4, #ff05d5);
-    padding-right: 70px;
-    padding-left: 70px;
+    padding-right: 120px;
+    padding-left: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 30px;
     width: 200px;
     height: 90px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-anchor: center;
     font-size: 90px;
     font-weight: 60px;
+    position: relative;
     
 }
