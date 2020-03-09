@@ -30,3 +30,5 @@ function myClock() {
 
     var clock = document.getElementById("clock").innerHTML =   h + ":" + m + ":" + s;//id van div
 }
+
+//veel fouten, vraag docent:(
