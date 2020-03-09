@@ -14,14 +14,7 @@ function myClock() {
     if(h == 0){
         h = 24; 
     }   
-    
-    if(m < 60){
-        m = m + 23;
-    }
-    
-    if(m == 0){
-        m == 60;
-    }
+//vraag aan docent, hoe moet ik minuten fixen?
     
     var clock = document.getElementById("clock").innerHTML =   h + ":" + m + ":" + s;//id van div
 }
