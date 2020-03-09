@@ -15,10 +15,10 @@ h1{
 }
 
 #clock{
-    color: white;
+
     background-image: linear-gradient(to right, #03a9f4, #ff05d5);
-    padding-right: 120px;
-    padding-left: 20px;
+    padding-right: 100px;
+    padding-left: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
     width: 200px;
@@ -26,21 +26,25 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     text-anchor: center;
-    font-size: 90px;
+    font-size: 70px;
     font-weight: 60px;
     position: relative;
     border: 1px solid #03dff3;
 }
 
 @media only screen and (min-width: 600px){
+    #clock{
+        
+    }
 }
 
 @media only screen and (min-width: 1100px){
     
 }
 
-@media only screen and (min-width: 1300px){    
-    #clock{  
+@media only screen and (min-width: 1300px){ 
+    
+    #clock{      
       color: white;
       background-image: linear-gradient(to right, #03a9f4, #ff05d5);
       padding-right: 120px;
