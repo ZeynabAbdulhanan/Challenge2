@@ -3,19 +3,30 @@ setInterval(myClock, 1000); //refresh every one second
 function myClock() {
     var currentDate = new Date();
     
-    var h = currentDate.getHours(); //hours, defining the variable currentDate
-    var m = currentDate.getMinutes(); //minutes 
-    var s = currentDate.getSeconds(); //seconds
+    var h = document.getElementById('h'); //hours, defining the variable currentDate
+    var m = document.getElementById('m');//minutes 
+    var s = document.getElementById('s'); //seconds
+    var ampm = document.getElementById('ampm');
     
-    if(h < 24){
-        h = h - 5; 
+    
+    var h = new Date().getHours();
+    var m = new Date().getMinutes();
+    var s = new Date().getSeconds(); 
+    var ampm = "AM"; 
+    
+    if(h>24){
+        h = h-24; 
+        var am = "PM"
     }
+   //nul te toevoegen voor het nummer als tijd is kleiner dan 10 uur  
+    h = (h < 10) ? "0" + h : h
+    m = (m < 10) ? "0" + m : m
+    s = (s < 10) ? "0" + s : s
     
-    if(h == 0){
-        h = 24; 
-    }   
-//vraag aan docent, hoe moet ik minuten fixen?
-//vraag aan docent, 0 toevoegen voor het nummer, dus 09 en niet 9    
-    
+    h.innerHTML = h; 
+    m.innerHTML = m; 
+    s.innerHTML = s;
+    ampm.innerHTML = am;
+
     var clock = document.getElementById("clock").innerHTML =   h + ":" + m + ":" + s;//id van div
 }

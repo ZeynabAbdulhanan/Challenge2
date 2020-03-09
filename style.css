@@ -21,7 +21,7 @@ h1{
     padding-left: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 200px;
+    width: auto;
     height: 90px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -29,7 +29,7 @@ h1{
     font-size: 70px;
     font-weight: 60px;
     position: relative;
-    border: 1px solid #03dff3;
+
 }
 
 @media only screen and (min-width: 600px){
