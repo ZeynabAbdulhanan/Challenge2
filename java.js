@@ -12,11 +12,11 @@ function myClock() {
     var h = new Date().getHours();
     var m = new Date().getMinutes();
     var s = new Date().getSeconds(); 
-    var ampm = "AM"; 
+    var ampm = "am"; 
     
     if(h>24){
         h = h-24; 
-        var am = "PM"
+        var am = "pm"
     }
    //nul te toevoegen voor het nummer als tijd is kleiner dan 10 uur  
     h = (h < 10) ? "0" + h : h
@@ -28,7 +28,7 @@ function myClock() {
     s.innerHTML = s;
     ampm.innerHTML = am;
 
-    var clock = document.getElementById("clock").innerHTML =   h + ":" + m + ":" + s + ampm;//id van div
+    var clock = document.getElementById("clock").innerHTML =   h + ":" + m + ":" + s + "" + ampm;//id van div
 }
 
 //veel fouten, vraag docent:(
