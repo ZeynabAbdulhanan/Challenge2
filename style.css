@@ -43,12 +43,22 @@ h2{
 }
 
 @media only screen and (min-width: 600p){
-    .container{
-        margin: 10px;
-        padding: 10px;
-        display: flex
-        flex-flow: row nowrap;     
-    }
+    #clock{
+        background-image: linear-gradient(to right, #03a9f4, #ff05d5);
+        padding-right: 100px;
+        padding-left: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: auto;
+        height: 90px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        text-anchor: center;
+        font-size: 70px;
+        font-weight: 60px;
+        position: relative;
+        animation: 1000ms pulsate infinite alternate ease-in-out;
+}
     
 }
 
