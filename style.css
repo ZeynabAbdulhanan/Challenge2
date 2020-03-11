@@ -79,7 +79,6 @@ h1{
         flex-direction: row;
         font-family: 'Roboto', sans-serif;
         font-size: 10vw;
-        padding-bottom: 50px;
         text-shadow: 20px;
         animation: animate 4s linear infinite;
 }
@@ -100,7 +99,7 @@ h1{
     
 }
 
-/*style voor desktop scherm*/
+/*style voor large desktop scherm*/
 @media only screen and (min-width: 1300px){  
     h1{
         color: white;
