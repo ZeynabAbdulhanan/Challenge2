@@ -5,6 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 h2{
@@ -42,24 +43,17 @@ h2{
   }
 }
 
-@media only screen and (min-width: 600p){
-    #clock{
-        background-image: linear-gradient(to right, #03a9f4, #ff05d5);
-        padding-right: 100px;
-        padding-left: 40px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+@media only screen and (min-width: 600px){
+    body{
+        height: auto;
         width: auto;
-        height: 90px;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        text-anchor: center;
-        font-size: 70px;
-        font-weight: 60px;
-        position: relative;
-        animation: 1000ms pulsate infinite alternate ease-in-out;
-}
-    
+    }
+    #clock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
 }
 
 @media only screen and (min-width: 1100px){
@@ -68,34 +62,23 @@ h2{
 
 @media only screen and (min-width: 1300px){  
     #clock{      
-      color: white;
-      background-image: linear-gradient(to right, #03a9f4, #ff05d5);
-      padding-right: 120px;
-      padding-left: 20px;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      width: 500px;
-      height: auto;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; 
-      text-align: center;
-      font-size: 90px;
-      font-weight: 60px;
-      position: relative;
-      border: 1px solid #03dff3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
 }
 
-#clock:before{
-    content:'';
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-image: linear-gradient(to right, #03dff3, #ff05d5);
-    box-shadow: -25px 15px 70px #03dff3, 25px -15px 70px #ff05d5;
-    animation: movement 4s ease infinite; 
+    #clock:before{
+        content:'';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: linear-gradient(to right, #03dff3, #ff05d5);
+        box-shadow: -25px 15px 70px #03dff3, 25px -15px 70px #ff05d5;
+        animation: movement 4s ease infinite; 
 }
 
 @keyframes movement {
