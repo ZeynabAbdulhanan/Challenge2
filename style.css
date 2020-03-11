@@ -30,8 +30,16 @@ h2{
     font-size: 70px;
     font-weight: 60px;
     position: relative;
-    
+    animation: 1000ms pulsate infinite alternate ease-in-out;
+}
 
+@keyframes pulsate {
+  0% { 
+  	top: 90px; 
+  }
+  100% { 
+  	top: 75px;
+  }
 }
 
 @media only screen and (min-width: 600p){
