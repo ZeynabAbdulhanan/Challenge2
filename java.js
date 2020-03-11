@@ -28,7 +28,7 @@ function myClock() {
     s.innerHTML = s;
     ampm.innerHTML = am;
 
-    var clock = document.getElementById("clock").innerHTML =   h + ":" + m + ":" + s;//id van div
+    var clock = document.getElementById("clock").innerHTML =   h + ":" + m + ":" + s + ampm;//id van div
 }
 
 //veel fouten, vraag docent:(
