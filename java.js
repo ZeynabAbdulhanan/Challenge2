@@ -7,7 +7,7 @@ function myClock() {
     var seconds = currentDate.getSeconds(); //seconds
     
    
-    var amPm = (hours < 12 ) ? "am" : "pm"; 
+    var amPm = (hours < 12 ) ? "AM" : "PM"; 
     
     
     hours = (hours > 12) ? hours - 12 : hours;
@@ -20,4 +20,16 @@ function myClock() {
     var clock = document.getElementById('clock').innerHTML =   hours + ":" + minutes + ":" + seconds + "" + amPm;//id van div
       
     var t = setTimeout(myClock, 1000);  
+    
+    if(hours >= 6 && hours < 12){
+        document.body.style.backgroundColor = "gray";
+    }
+    
+    else if (hours >= 12 && hours < 18){
+        document.body.style.backgroundColor = "blue";
+    }
+    
+    else{
+        document.body.style.backgroundColor = "black"
+    } 
 }
