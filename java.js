@@ -30,6 +30,7 @@ function myClock() {
     }
     
     else{
-        document.body.style.backgroundColor = "black"
+        document.body.style.backgroundColor = "#e5e5e5";
+        document.myClock.style.color = "black";
     } 
 }
