@@ -25,8 +25,8 @@ function myClock() {
         document.body.style.backgroundColor = "#290443";
     }
     
-    else if (hours >= 12 && hours < 18){
-        document.body.style.backgroundColor = "#cccccc";
+    else if (hours >= 12 && hours < 6){
+        document.body.style.backgroundColor = "#6a398d";
     }
     
     else{
