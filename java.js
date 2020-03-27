@@ -22,14 +22,10 @@ function myClock() {
     var t = setTimeout(myClock, 1000);  
     
     if(hours >= 6 && hours < 12){
-        document.body.style.backgroundColor = "#290443";
-    }
-    
-    else if (hours >= 12 && hours < 6){
         document.body.style.backgroundColor = "#6a398d";
     }
     
     else{
-        document.body.style.backgroundColor = "#16164a";
+        document.body.style.backgroundColor = "#290443";
     } 
 }
